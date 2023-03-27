@@ -1,0 +1,6 @@
+{
+"dartGetterVariableName": "english translation of the message",
+  "@dartGetterVariableName": {
+    "description": "description that the localizations delegate will use."
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>259561067988-ghldni1ktp00upjjocjr9uqpsq4sbk3v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.259561067988-ghldni1ktp00upjjocjr9uqpsq4sbk3v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAWR0YLC38FElobES3ndvcN5Z-4PW_NTn8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>259561067988</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.capstoneApp</string>
+	<key>PROJECT_ID</key>
+	<string>modular-rex-277401</string>
+	<key>STORAGE_BUCKET</key>
+	<string>modular-rex-277401.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:259561067988:ios:f92d8e2f458b2fa0c97241</string>
+	<key>DATABASE_URL</key>
+	<string>https://modular-rex-277401.firebaseio.com</string>
+</dict>
+</plist>

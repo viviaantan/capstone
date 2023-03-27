@@ -1,0 +1,102 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get
+
+## exception
+
+YamlException: Error on line 8, column 40: Expected ':'.
+  ╷
+8 │   output-class: GalleryLocalizations'''
+  │                                        ^
+  ╵
+
+```
+#0      Scanner._reportError (package:yaml/src/scanner.dart:1648:7)
+#1      Scanner._staleSimpleKeys (package:yaml/src/scanner.dart:503:9)
+#2      Scanner._fetchMoreTokens (package:yaml/src/scanner.dart:337:9)
+#3      Scanner.peek (package:yaml/src/scanner.dart:329:27)
+#4      Parser._parseBlockMappingKey (package:yaml/src/parser.dart:426:26)
+#5      Parser._stateMachine (package:yaml/src/parser.dart:100:16)
+#6      Parser.parse (package:yaml/src/parser.dart:61:19)
+#7      Loader._loadMapping (package:yaml/src/loader.dart:175:23)
+#8      Loader._loadNode (package:yaml/src/loader.dart:92:16)
+#9      Loader._loadDocument (package:yaml/src/loader.dart:68:20)
+#10     Loader.load (package:yaml/src/loader.dart:60:20)
+#11     loadYamlDocument (package:yaml/yaml.dart:72:25)
+#12     loadYamlNode (package:yaml/yaml.dart:57:5)
+#13     generateLocalizationsSyntheticPackage (package:flutter_tools/src/dart/generate_synthetic_packages.dart:31:29)
+#14     PackagesGetCommand._runPubGet (package:flutter_tools/src/commands/packages.dart:131:13)
+#15     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:174:11)
+#16     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1374:12)
+<asynchronous suspension>
+#17     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1209:27)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#19     CommandRunner.runCommand (package:args/command_runner.dart:209:13)
+<asynchronous suspension>
+#20     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:281:9)
+<asynchronous suspension>
+#21     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#22     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:229:5)
+<asynchronous suspension>
+#23     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:9)
+<asynchronous suspension>
+#24     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#25     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.3.4, on macOS 11.6 20G165 darwin-arm, locale en-CA)
+    • Flutter version 3.3.4 on channel stable at /Users/viviaantan/Software/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision eb6d86ee27 (6 weeks ago), 2022-10-04 22:31:45 -0700
+    • Engine revision c08d7d5efc
+    • Dart version 2.18.2
+    • DevTools version 2.15.0
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
+    • Android SDK at /Users/viviaantan/Library/Android/sdk
+    • Platform android-33, build-tools 33.0.0
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
+    • All Android licenses accepted.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 13.2.1)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Build 13C100
+    • CocoaPods version 1.11.3
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 2021.3)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.13+0-b1751.21-8125866)
+
+[✓] VS Code (version 1.72.2)
+    • VS Code at /Users/viviaantan/Downloads/Visual Studio Code.app/Contents
+    • Flutter extension version 3.52.0
+
+[✓] Connected device (3 available)
+    • iPhone 13 Pro Max (mobile) • 429C4EE6-174A-4C5C-8BA7-E31FE858187C • ios            • com.apple.CoreSimulator.SimRuntime.iOS-15-2 (simulator)
+    • macOS (desktop)            • macos                                • darwin-arm64   • macOS 11.6 20G165 darwin-arm
+    • Chrome (web)               • chrome                               • web-javascript • Google Chrome 107.0.5304.110
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+• No issues found!
+```
